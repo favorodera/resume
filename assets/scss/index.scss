@@ -1,0 +1,21 @@
+@layer custom {
+  .font-ibm {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+}
+
+* {
+  @apply m-0 p-0 box-border
+}
+
+html {
+  @apply scroll-smooth 
+}
+
+body {
+ @apply min-h-screen 
+}
+
+#app {
+  @apply m-[0_auto] px-4 py-10 sm:py-16 w-[clamp(20rem,100%,42rem)] print:font-sans font-ibm
+}
