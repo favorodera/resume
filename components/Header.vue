@@ -6,7 +6,7 @@
           {{ profile.name }}
         </h1>
 
-        <p class="max-w-sm text-neutral-5">
+        <p class="max-w-sm text-base text-neutral-5">
           {{ profile.description }}
         </p>
 
@@ -14,7 +14,7 @@
           <i class="i-lucide-globe size-5 print:size-4" />{{ profile.location }}
         </p>
 
-        <ContactAndSocials />
+        <Socials />
       </section>
 
       <img
@@ -27,10 +27,10 @@
     <button
       type="button"
       :aria-label="`Print ${profile.name}`"
-      class="w-max b-0 rounded-md bg-neutral-800 px-4 py-1 text-sm text-white shadow-sm print:hidden hover:bg-neutral-700"
+      class="w-max cursor-pointer b-0 rounded-md bg-neutral-800 px-4 py-1 text-sm text-white tracking-wider print:hidden hover:bg-neutral-700"
       @click="print"
     >
-      PRINT
+      Print <i class="i-lucide-printer?bg size-5" />
     </button>
   </header>
 </template>
