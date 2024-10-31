@@ -5,25 +5,41 @@
 }
 
 * {
-  @apply m-0 p-0 box-border
+  @apply m-0 p-0 box-border;
 }
 
 html {
-  @apply scroll-smooth 
+  @apply scroll-smooth;
+
+  ::-webkit-scrollbar {
+    @apply size-2;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-#888 rounded-4;
+
+    &:hover {
+      @apply bg-#555 cursor-grab;
+    }
+  }
+
+  ::-webkit-scrollbar-button {
+    @apply hidden;
+  }
 }
 
 body {
- @apply min-h-screen bg-black print:bg-white
+  @apply min-h-screen bg-black print:bg-white;
 }
 
 #app {
-  @apply m-[0_auto] px-4 py-10 sm:py-16 w-[clamp(20rem,100%,50rem)] print:font-sans font-ibm
+  @apply m-[0_auto] px-4 py-10 sm:py-16 min-w-xs max-w-[50rem]  print:font-sans font-ibm;
 }
 
 .white {
-  @apply text-neutral-1 print:text-neutral-8
+  @apply text-neutral-1 print:text-neutral-8;
 }
 
 .gray {
-  @apply text-neutral-5
+  @apply text-neutral-5;
 }

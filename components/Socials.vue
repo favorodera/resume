@@ -60,6 +60,6 @@ const { profile, socials } = useAppConfig()
 }
 
 .link-text {
-  @apply hidden print:inline
+  @apply hidden print:inline;
 }
 </style>
