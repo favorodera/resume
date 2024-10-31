@@ -18,7 +18,7 @@
           </h3>
           <span class="gray text-sm">{{ edu.startYear }} - {{ edu.endYear }}</span>
         </section>
-        <p class="gray">
+        <p class="gray text-sm">
           {{ edu.certification }}
         </p>
       </section>

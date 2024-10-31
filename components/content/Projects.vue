@@ -14,7 +14,7 @@
         class="group flex flex-col gap-1 decoration-none"
       >
 
-        <h3 class="white text-md font-semibold group-hover:underline">
+        <h3 class="white text-base font-semibold group-hover:underline">
           {{ project.name }}
         </h3>
 

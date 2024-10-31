@@ -18,7 +18,7 @@
           </h3>
           <span class="gray text-sm">{{ experience.startYear }} - {{ experience.endYear }}</span>
         </section>
-        <p class="gray">
+        <p class="gray text-sm">
           {{ experience.position }}
         </p>
       </section>
