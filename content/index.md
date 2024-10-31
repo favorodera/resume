@@ -4,7 +4,7 @@ I am a passionate frontend developer with a strong focus on creating visually ap
 I thrive in collaborative environments and enjoy transforming ideas into high-quality code. I am always eager to learn and grow, and I am committed to staying up-to-date with the latest web development trends and best practices.
 ::
 
-::skills 
+::skills
 ::
 
 ::experience
