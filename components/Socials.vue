@@ -3,7 +3,7 @@
     <NuxtLink
       :to="profile.website"
       target="_blank"
-      class="link"
+      class="gray link"
     >
       <i class="i-lucide-link size-5 print:size-4" /> <span class="link-text">{{ profile.website }}</span>
     </NuxtLink>
@@ -11,7 +11,7 @@
     <NuxtLink
       :to="profile.email"
       target="_blank"
-      class="link"
+      class="link gray"
     >
       <i class="i-lucide-mail size-5 print:size-4" /> <span class="link-text">{{ profile.email }}</span>
     </NuxtLink>
@@ -19,7 +19,7 @@
     <NuxtLink
       :to="profile.phone"
       target="_blank"
-      class="link"
+      class="link gray"
     >
       <i class="i-lucide-phone size-5 print:size-4" /> <span class="link-text">{{ profile.phone }}</span>
     </NuxtLink>
@@ -27,7 +27,7 @@
     <NuxtLink
       :to="socials.github"
       target="_blank"
-      class="link"
+      class="link gray"
     >
       <i class="i-lucide-github size-5 print:size-4" /> <span class="link-text">{{ socials.github }}</span>
     </NuxtLink>
@@ -35,7 +35,7 @@
     <NuxtLink
       :to="socials.twitter"
       target="_blank"
-      class="link"
+      class="link gray"
     >
       <i class="i-lucide-twitter size-5 print:size-4" /> <span class="link-text">{{ socials.twitter }}</span>
     </NuxtLink>
@@ -43,7 +43,7 @@
     <NuxtLink
       :to="socials.linkedin"
       target="_blank"
-      class="link"
+      class="link gray"
     >
       <i class="i-lucide-linkedin size-5 print:size-4" /> <span class="link-text">{{ socials.linkedin }}</span>
     </NuxtLink>
@@ -56,7 +56,7 @@ const { profile, socials } = useAppConfig()
 
 <style scoped lang="scss">
 .link {
-  @apply flex items-center gap-2 text-neutral-5 decoration-none hover:text-neutral-7;
+  @apply flex items-center gap-2 decoration-none hover:text-neutral-6;
 }
 
 .link-text {

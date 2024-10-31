@@ -1,9 +1,17 @@
 ::about
-A passionate frontend developer who thrives on crafting visually captivating and innovative web applications. 
-My core expertise lies in leveraging the power of **VUE**, **NUXT**, **UNOCSS**, and **TYPESCRIPT** 
-to create user experiences that are both beautiful and highly functional.
+I am a passionate frontend developer with a strong focus on creating visually appealing and user-friendly web applications. My expertise lies in utilizing modern technologies such as **VUE**, **NUXT**, **UNOCSS**, and **TYPESCRIPT** to build efficient and robust solutions.
 
-I love collaborating, turning ideas into clean code, and constantly pushing web development boundaries. I'm always eager to learn new technologies and connect with others who share my passion for creating exceptional web experiences.
-
+I thrive in collaborative environments and enjoy transforming ideas into high-quality code. I am always eager to learn and grow, and I am committed to staying up-to-date with the latest web development trends and best practices.
 ::
 
+::skills 
+::
+
+::experience
+::
+
+::education
+::
+
+::projects
+::

@@ -17,6 +17,16 @@ export default defineConfig({
     // ...
 
   },
+  safelist: [
+    'i-lucide-globe',
+    'i-lucide-link',
+    'i-lucide-mail',
+    'i-lucide-phone',
+    'i-lucide-github',
+    'i-lucide-twitter',
+    'i-lucide-linkedin',
+    'i-lucide-printer',
+  ],
   presets: [
     presetUno(),
     presetAttributify(),

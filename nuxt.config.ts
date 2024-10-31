@@ -17,10 +17,10 @@ export default defineNuxtConfig({
 
   colorMode: {
     preference: 'dark',
+    fallback: 'dark',
     storage: 'localStorage',
     classSuffix: '',
-    classPrefix: '',
-    storageKey: 'nuxt-color-mode',
+    storageKey: 'color-mode',
   },
 
   content: {
