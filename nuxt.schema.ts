@@ -65,7 +65,6 @@ export default defineNuxtSchema({
         }),
       },
     }),
-
     socials: group({
       title: 'Socials',
       description: 'Socials Configuration',
@@ -95,7 +94,6 @@ export default defineNuxtSchema({
         ),
       },
     }),
-
     seo: group({
       title: 'SEO',
       description: 'SEO configuration',
