@@ -27,7 +27,7 @@
     <button
       type="button"
       :aria-label="`Print ${profile.name}`"
-      class="white h-10 w-16 flex cursor-pointer items-center justify-center b-0 rounded-md text-sm print:hidden dark:bg-neutral-9 dark:hover:bg-neutral-8"
+      class="white h-10 w-16 flex cursor-pointer items-center justify-center b-0 rounded-md text-sm print:hidden dark:bg-neutral-8 dark:hover:bg-neutral-9"
       @click="print"
     >
       <i class="i-lucide-printer size-5" />

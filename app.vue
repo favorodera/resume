@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-const { seo } = useAppConfig()
+const { seo, profile } = useAppConfig()
 
 useServerSeoMeta({
   title: seo.title,
@@ -27,16 +27,19 @@ useServerSeoMeta({
   },
   charset: 'UTF-8',
   twitterImage: {
-    alt: 'Favour Emeka',
+    alt: profile.name as string,
     type: 'image/jpeg',
     width: 1200,
     height: 630,
-    url: seo.picture,
+    url: seo.image as string,
   },
   twitterCard: 'summary_large_image',
 })
 
 useServerHead({
+  htmlAttrs: {
+    lang: seo.lang,
+  },
   link: [
     {
       rel: 'icon',

@@ -8,7 +8,6 @@ export default defineAppConfig({
     phone: '+234-802-438-3756',
     website: 'https://favorodera.vercel.app',
     picture: '/avatar.jpg',
-    skills: ['VUE', 'NUXT', 'UNOCSS', 'SCSS', 'TYPESCRIPT'],
   },
 
   socials: {
@@ -20,8 +19,8 @@ export default defineAppConfig({
   seo: {
     title: 'Favour Emeka | Resume',
     description: 'Favour Emeka - Front-end Web Developer',
-    url: 'https://favorodera.vercel.app',
-    picture: '/images/avatar.jpg',
+    url: 'https://resume-favorodera.vercel.app',
+    image: '/images/avatar.jpg',
     lang: 'en',
   },
 })
