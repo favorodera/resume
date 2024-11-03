@@ -2,7 +2,6 @@
   <section class="flex items-start gap-3 print:flex-col print:gap-2">
     <NuxtLink
       :to="profile.website"
-      target="_blank"
       class="gray link"
     >
       <i class="i-lucide-link size-5 print:size-4" /> <span class="link-text">{{ profile.website }}</span>

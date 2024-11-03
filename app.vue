@@ -11,7 +11,7 @@
 <script setup lang="ts">
 const { seo, profile } = useAppConfig()
 
-useServerSeoMeta({
+useSeoMeta({
   title: seo.title,
   ogTitle: seo.title,
   ogUrl: seo.url,
@@ -36,7 +36,7 @@ useServerSeoMeta({
   twitterCard: 'summary_large_image',
 })
 
-useServerHead({
+useHead({
   htmlAttrs: {
     lang: seo.lang,
   },
