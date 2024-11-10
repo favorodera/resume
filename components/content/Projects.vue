@@ -32,5 +32,5 @@
 <script lang="ts" setup>
 import type { Project } from '~/utils/types'
 
-const { data: projects } = await useAsyncData('projects', () => queryContent('/projects').limit(5).find()) as unknown as { data: Project }
+const { data: projects } = await useAsyncData('projects', () => queryContent('/projects').where({ _type: 'json' }).sort({ _file: -1, $numeric: true }).limit(5).find()) as unknown as { data: Project }
 </script>
