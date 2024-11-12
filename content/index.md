@@ -1,7 +1,5 @@
 ::about
-A skilled frontend web developer with a focus on building robust and user-friendly web applications. My expertise lies in leveraging  **VUE**, **NUXT**, **UNOCSS**, and **TYPESCRIPT** to deliver efficient and scalable solutions.
-
-I am proficient in crafting clean, maintainable, and performant code. I thrive in collaborative environments and am committed to staying up-to-date with the latest web development trends.
+An Experienced Frontend Web Developer with a strong foundation in building robust, user-centric web applications, proficient in utilizing **VUE**, **NUXT**, **UNOCSS**, and **TYPESCRIPT** to deliver efficient, scalable, and maintainable solutions and committed to writing clean, well-structured code that adheres to best practices.
 ::
 
 ::experience
