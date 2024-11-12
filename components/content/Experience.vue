@@ -12,11 +12,11 @@
         :key="index"
         class="flex flex-col gap-1"
       >
-        <section class="flex items-center justify-between">
+        <section class="flex items-center justify-between gap-4">
           <h3 class="white text-base font-semibold">
             {{ experience.firm }}
           </h3>
-          <span class="gray text-sm">{{ experience.startYear }} - {{ experience.endYear }}</span>
+          <span class="gray min-w-max text-sm">{{ experience.startYear }} - {{ experience.endYear }}</span>
         </section>
         <p class="gray text-sm">
           {{ experience.position }}
@@ -31,5 +31,5 @@ import type { Experience } from '~/utils/types'
 
 const { data: experiences } = await useAsyncData(
   'experience',
-  () => queryContent('/experience').where({ _type: 'json' }).sort({ startYear: -1 }).find()) as unknown as { data: Experience }
+  () => queryContent('/experience').where({ _type: 'json' }).sort({ _file: -1, $numeric: true }).find()) as unknown as { data: Experience }
 </script>

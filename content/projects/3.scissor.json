@@ -1,5 +1,6 @@
 {
     "name": "Scissor",
-    "url": "https://favorodera.vercel.app/projects/scissor",
-    "description": "A simple url shortener, QR code generator and storage site"
+    "description": "A simple url shortener, QR code generator and storage site",
+    "github": "https://github.com/favorodera/scissor",
+    "website":"https://scissortool.web.app/"
 }

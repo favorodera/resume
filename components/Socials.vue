@@ -1,10 +1,10 @@
 <template>
-  <section class="flex items-start gap-3 print:flex-col print:gap-2">
+  <section class="flex items-start gap-3">
     <NuxtLink
       :to="profile.website"
       class="gray link"
     >
-      <i class="i-lucide-link size-5 print:size-4" /> <span class="link-text">{{ profile.website }}</span>
+      <i class="i-lucide-link size-5" />
     </NuxtLink>
 
     <NuxtLink
@@ -12,7 +12,7 @@
       target="_blank"
       class="link gray"
     >
-      <i class="i-lucide-mail size-5 print:size-4" /> <span class="link-text">{{ profile.email }}</span>
+      <i class="i-lucide-mail size-5" />
     </NuxtLink>
 
     <NuxtLink
@@ -20,7 +20,7 @@
       target="_blank"
       class="link gray"
     >
-      <i class="i-lucide-phone size-5 print:size-4" /> <span class="link-text">{{ profile.phone }}</span>
+      <i class="i-lucide-phone size-5" />
     </NuxtLink>
 
     <NuxtLink
@@ -28,7 +28,7 @@
       target="_blank"
       class="link gray"
     >
-      <i class="i-lucide-github size-5 print:size-4" /> <span class="link-text">{{ socials.github }}</span>
+      <i class="i-lucide-github size-5" />
     </NuxtLink>
 
     <NuxtLink
@@ -36,7 +36,7 @@
       target="_blank"
       class="link gray"
     >
-      <i class="i-lucide-twitter size-5 print:size-4" /> <span class="link-text">{{ socials.twitter }}</span>
+      <i class="i-lucide-twitter size-5" />
     </NuxtLink>
 
     <NuxtLink
@@ -44,7 +44,7 @@
       target="_blank"
       class="link gray"
     >
-      <i class="i-lucide-linkedin size-5 print:size-4" /> <span class="link-text">{{ socials.linkedin }}</span>
+      <i class="i-lucide-linkedin size-5" />
     </NuxtLink>
   </section>
 </template>
@@ -56,9 +56,5 @@ const { profile, socials } = useAppConfig()
 <style scoped lang="scss">
 .link {
   @apply flex items-center gap-2 decoration-none hover:text-neutral-6;
-}
-
-.link-text {
-  @apply hidden print:inline;
 }
 </style>

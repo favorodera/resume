@@ -1,5 +1,6 @@
 {
     "name": "GitMe",
-    "url": "https://favorodera.vercel.app/projects/gitme",
-    "description": "A user-friendly tool that fetches Github user information and repositories."
+    "description": "A user-friendly tool that fetches Github user information and repositories.",
+    "github": "https://github.com/favorodera/gitMe",
+    "website": "https://git-me-peach.vercel.app"
 }

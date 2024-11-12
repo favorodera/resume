@@ -8,7 +8,9 @@ type Education = {
 type Project = {
   name: string
   description: string
-  url: string
+  website: string
+  github: string
+  technologies: Array<string>
 }[]
 
 type Experience = {
