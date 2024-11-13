@@ -11,7 +11,7 @@
         </p>
 
         <p class="gray mb-2 flex items-center gap-2 text-sm">
-          <i class="i-lucide-globe size-5" />{{ profile.location }}
+          <i class="i-lucide-map-pin size-5" />{{ profile.location }}
         </p>
 
         <Socials />

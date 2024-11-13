@@ -1,6 +1,5 @@
 {
     "name": "Nuxt Tiptap Editor Template",
     "description": "An easy to customize Nuxt 3 template for Tiptap Markdown Editor with all the free tiptap nodes and marks.",
-    "github": "https://github.com/favorodera/nuxtTiptapEditor",
     "website": "https://nuxt-tiptap-editor-template.vercel.app/"
 }

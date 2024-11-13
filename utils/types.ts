@@ -9,8 +9,6 @@ type Project = {
   name: string
   description: string
   website: string
-  github: string
-  technologies: Array<string>
 }[]
 
 type Experience = {

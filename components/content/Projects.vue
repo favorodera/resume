@@ -16,20 +16,12 @@
           <h1 class="white m-0 text-base font-semibold">
             {{ project.name }}
           </h1>
-          <div class="min-w-max flex items-center gap-4">
-            <NuxtLink
-              :to="project.github"
-              class="gray"
-            >
-              <i class="i-lucide-github size-5" />
-            </NuxtLink>
-            <NuxtLink
-              :to="project.website"
-              class="gray"
-            >
-              <i class="i-lucide-globe size-5" />
-            </NuxtLink>
-          </div>
+          <NuxtLink
+            :to="project.website"
+            class="gray"
+          >
+            <i class="i-lucide-external-link size-5 shrink-0" />
+          </NuxtLink>
         </div>
 
         <p

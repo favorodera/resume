@@ -1,6 +1,5 @@
 {
     "name": "Scissor",
     "description": "A simple url shortener, QR code generator and storage site",
-    "github": "https://github.com/favorodera/scissor",
     "website":"https://scissortool.web.app/"
 }

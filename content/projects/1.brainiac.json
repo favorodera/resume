@@ -1,6 +1,5 @@
 {
   "name": "Brainiac",
   "description": "An AI chat app powered by Google's Gemini model.",
-  "website": "https://brainiacai.vercel.app",
-  "github": "https://github.com/favorodera/brainiac"
+  "website": "https://brainiacai.vercel.app"
 }
