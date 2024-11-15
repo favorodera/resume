@@ -1,8 +1,9 @@
 type Education = {
   institution: string
   certification: string
-  startYear: string
-  endYear: string
+  course: string
+  period: string
+  url: string
 }[]
 
 type Project = {
@@ -13,9 +14,12 @@ type Project = {
 
 type Experience = {
   firm: string
-  position: string
-  startYear: string
-  endYear: string
+  role: string
+  type: string
+  period: string
+  description: string
+  url: string
+  details: string[]
 }[]
 
 export type{ Education, Project, Experience }

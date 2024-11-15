@@ -1,45 +1,31 @@
-@layer custom {
-  .font-ibm {
-    font-family: 'IBM Plex Mono', monospace;
-  }
-}
+@import '@unocss/reset/normalize.css';
 
-* {
-  @apply m-0 p-0 box-border;
-}
-
-html {
-  @apply scroll-smooth;
-
-  ::-webkit-scrollbar {
-    @apply size-2;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    @apply bg-#888 rounded-4;
-
-    &:hover {
-      @apply bg-#555 cursor-grab;
-    }
-  }
-
-  ::-webkit-scrollbar-button {
-    @apply hidden;
-  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  @apply min-h-screen bg-black print:bg-white;
+    background: black;
+    min-height: 100vh;
+    @apply print:bg-white;
 }
 
 #app {
-  @apply m-[0_auto] px-4 py-10 sm:py-16 min-w-xs max-w-[50rem]  print:font-sans font-ibm;
+    background: transparent;
+    padding: 2.5rem 1rem;
+    margin: 0 auto;
+    width: clamp(15rem, 100%, 50rem);
+    font-family: "Source Code Pro", monospace;
+    @apply sm:pt-16;
+    color: white;
 }
 
 .white {
-  @apply text-neutral-1 print:text-neutral-8;
+    @apply text-white print:text-black;
 }
 
 .gray {
-  @apply text-#A3A3A3 print:text-neutral-8;
+    @apply text-gray3 print:text-gray4;
 }

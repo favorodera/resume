@@ -1,12 +1,23 @@
-::about
-An Experienced Frontend Web Developer with a strong foundation in building robust, user-centric web applications, proficient in utilizing **VUE**, **NUXT**, **UNOCSS**, and **TYPESCRIPT** to deliver efficient, scalable, and maintainable solutions and committed to writing clean, well-structured code that adheres to best practices.
+::home-header
+---
+name: Favour Emeka
+email: FAVORODERA@GMAIL.COM
+location: IMO, NIGERIA.
+website: FAVORODERA.VERCEL.APP
+header-intro: Vue/Nuxt Front-end Web Developer proficient in building user-friendly web applications.
+---
+
 ::
 
-::projects
+::home-about
+A Frontend Web Developer with a strong foundation in building robust, user-centric web applications. Focused on delivering efficient, scalable, and maintainable solutions while committed to writing clean, well-structured code that adheres to best practices.
 ::
 
-<!-- ::experience -->
-<!-- :: -->
+::home-experience
+::
 
-::education
+::home-projects
+::
+
+::home-education
 ::

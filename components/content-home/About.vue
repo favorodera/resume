@@ -3,8 +3,11 @@
     <h3 class="white text-xl font-semibold">
       About
     </h3>
-    <section class="white flex flex-col gap-3 text-pretty text-base">
-      <slot />
-    </section>
+    <p class="white text-pretty text-base">
+      <ContentSlot
+        :use="$slots.default"
+        unwrap="p"
+      />
+    </p>
   </section>
 </template>

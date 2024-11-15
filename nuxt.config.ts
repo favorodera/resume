@@ -4,6 +4,15 @@ export default defineNuxtConfig({
 
   ssr: true,
 
+  components: [
+    {
+      path: '~/components/content-home',
+      global: true,
+      pathPrefix: true,
+      prefix: 'Home',
+    },
+  ],
+
   devtools: { enabled: false },
 
   app: {
@@ -13,7 +22,7 @@ export default defineNuxtConfig({
     },
   },
 
-  css: ['~/assets/scss/index.scss', '@unocss/reset/normalize.css'],
+  css: ['~/assets/scss/index.scss'],
 
   colorMode: {
     preference: 'dark',
@@ -24,18 +33,10 @@ export default defineNuxtConfig({
   },
 
   content: {
-    highlight: {
-      langs: ['c'],
-      theme: {
-        default: 'github-dark',
-        dark: 'github-dark',
-        light: 'github-light',
-      },
+    documentDriven: true,
+    markdown: {
+      mdc: true,
     },
-  },
-
-  experimental: {
-    asyncContext: true,
   },
 
   compatibilityDate: '2024-04-03',

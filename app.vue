@@ -1,23 +1,17 @@
 <template>
-  <main class="flex flex-col gap-10">
-    <Header />
-    <ContentDoc
-      class="flex flex-col gap-10"
-      tag="section"
-    />
+  <main>
+    <NuxtPage />
   </main>
 </template>
 
 <script setup lang="ts">
-const { seo, profile } = useAppConfig()
-
 useSeoMeta({
-  title: seo.title,
-  ogTitle: seo.title,
-  ogUrl: seo.url,
-  ogSiteName: seo.title,
-  description: seo.description,
-  ogDescription: seo.description,
+  title: 'Favour Emeka | Resume',
+  ogTitle: 'Favour Emeka | Resume',
+  description: 'Favour Emeka - Front-end Web Developer',
+  ogDescription: 'Favour Emeka - Front-end Web Developer',
+  ogImage: '/avatar.jpg',
+  twitterCard: 'summary_large_image',
   viewport: {
     width: 'device-width',
     initialScale: 1,
@@ -25,20 +19,23 @@ useSeoMeta({
     userScalable: 'yes',
     viewportFit: 'cover',
   },
-  charset: 'UTF-8',
   twitterImage: {
-    alt: profile.name as string,
+    alt: 'Favour Emeka',
+    url: '/avatar.jpg',
     type: 'image/jpeg',
-    width: 1200,
-    height: 630,
-    url: seo.image as string,
+    width: 400,
+    height: 400,
   },
-  twitterCard: 'summary_large_image',
-})
+  charset: 'UTF-8',
+  ogLocale: 'en_NG',
+  ogType: 'profile',
+  ogSiteName: 'Favour Emeka',
+},
+)
 
 useHead({
   htmlAttrs: {
-    lang: seo.lang,
+    lang: 'en',
   },
   link: [
     {
