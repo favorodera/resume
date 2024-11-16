@@ -6,24 +6,18 @@
     <h3 class="white text-xl font-semibold">
       Projects
     </h3>
-    <section class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+    <section class="flex flex-col gap-4">
       <section
         v-for="(project, index) in projects"
         :key="index"
-        class="flex flex-col gap-5 b-1 b-coolgray/30 rounded-lg b-solid p-4"
+        class="flex flex-col gap-2 b-1 b-coolgray/30 rounded-lg b-solid p-4"
       >
-        <div class="flex items-center justify-between gap-4">
-          <h1 class="white m-0 text-base font-semibold">
-            {{ project.name }}
-          </h1>
-          <NuxtLink
-            :to="project.website"
-            class="gray"
-            target="_blank"
-          >
-            <i class="i-lucide-external-link size-5 shrink-0" />
-          </NuxtLink>
-        </div>
+        <NuxtLink
+          :to="project.website"
+          class="white text-base font-semibold decoration-none"
+          target="_blank"
+        >{{ project.name }}
+        </NuxtLink>
 
         <p
           class="gray text-sm"

@@ -1,5 +1,5 @@
 {
     "name": "GitMe",
-    "description": "A user-friendly tool that fetches Github user information and repositories.",
+    "description": "An intuitive GitHub profile analytics tool that provides comprehensive visualization of user information and repository metrics, enabling efficient developer portfolio exploration.",
     "website": "https://git-me-peach.vercel.app"
 }

@@ -1,5 +1,5 @@
 {
     "name": "Scissor",
-    "description": "A simple url shortener, QR code generator and storage site",
+    "description": "A versatile web application that streamlines URL management by providing URL shortening, QR code generation, and secure link storage capabilities in one integrated platform.",
     "website":"https://scissortool.web.app/"
 }
