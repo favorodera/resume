@@ -15,10 +15,10 @@
         <header class="white flex items-center gap-2">
           <a
             :href="experience.url"
-            class="decoration-none"
+            class="white text-lg font-semibold decoration-none"
             target="_blank"
           >
-            <h4 class="white text-lg font-semibold">{{ experience.firm }}</h4>
+            {{ experience.firm }}
 
           </a>
           &hyphen;

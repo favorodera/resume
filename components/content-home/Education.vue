@@ -12,10 +12,10 @@
         <header class="white flex items-center gap-2">
           <a
             :href="edu?.url"
-            class="decoration-none"
+            class="white text-lg font-semibold decoration-none"
             target="_blank"
           >
-            <h4 class="white text-lg font-semibold">{{ edu?.institution }}</h4>
+            {{ edu?.institution }}
 
           </a>
           &hyphen;
