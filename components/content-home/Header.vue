@@ -15,13 +15,19 @@
             <i class="i-lucide-map-pin size-5" /> {{ location }}
           </p>
 
-          <p class="gray flex items-center gap-2 text-sm">
-            <i class="i-lucide-globe size-5 decoration-none" /> {{ website }}
-          </p>
+          <NuxtLink
+            :to="`https://${website}`"
+            class="gray flex items-center gap-2 text-sm decoration-none hover:underline"
+          >
+            <i class="i-lucide-globe size-5" /> {{ website }}
+          </NuxtLink>
 
-          <p class="gray flex items-center gap-2 text-sm">
+          <NuxtLink
+            :to="`mailto:${email}`"
+            class="gray flex items-center gap-2 text-sm decoration-none hover:underline"
+          >
             <i class="i-lucide-mail size-5" /> {{ email }}
-          </p>
+          </NuxtLink>
         </div>
       </section>
       <img
