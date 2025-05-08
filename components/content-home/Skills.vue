@@ -28,7 +28,7 @@ const skills = ref([
   'NUXT UI',
   'NUXT CONTENT',
   'PINIA',
-  'SUPABASE'
+  'SUPABASE',
   'FIREBASE',
   'GEMINI'
 ])
