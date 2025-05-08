@@ -19,15 +19,17 @@
 
 <script lang="ts" setup>
 const skills = ref([
-  'VUE',
-  'NUXT',
-  'JAVASCRIPT',
+  'VUE.JS',
+  'NUXT.JS',
   'TYPESCRIPT',
-  'SCSS',
+  'TAILWIND CSS',
   'UNOCSS',
+  'PRIMEVUE',
   'NUXT UI',
   'NUXT CONTENT',
   'PINIA',
+  'SUPABASE'
   'FIREBASE',
+  'GEMINI'
 ])
 </script>
