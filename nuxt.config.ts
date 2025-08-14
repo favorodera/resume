@@ -31,6 +31,9 @@ export default defineNuxtConfig({
       api: 'https://api.nuxt.studio',
     },
   },
+  routeRules: {
+    '/': { prerender: true },
+  },
   experimental: {
     viewTransition: true,
   },
