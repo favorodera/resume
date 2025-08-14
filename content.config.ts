@@ -22,6 +22,13 @@ const educationSchema = z.object({
   endDate: z.number(),
 })
 
+const projectSchema = z.object({
+  name: z.string(),
+  description: z.string(),
+  technologies: z.array(z.string()),
+  url: z.string(),
+})
+
 export default defineContentConfig({
   collections: {
     index: defineCollection({
@@ -37,6 +44,7 @@ export default defineContentConfig({
         workExperience: z.array(workExperienceSchema),
         education: z.array(educationSchema),
         skills: z.array(z.string()),
+        projects: z.array(projectSchema),
       }),
     }),
   },

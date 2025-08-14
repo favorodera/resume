@@ -46,6 +46,15 @@
 
       </PageSection>
   
+      <PageSection title="Projects">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <Project
+            v-for="(project, index) in page.projects"
+            :key="index"
+            v-bind="project"
+          />
+        </div>
+      </PageSection>
 
     </template>
 

@@ -74,8 +74,6 @@
             color="neutral"
             aria-label="Download resume as PDF"
             @click="downloadResume"
-            @keydown.enter="downloadResume"
-            @keydown.space.prevent="downloadResume"
           />
         </UTooltip>
 
@@ -112,11 +110,14 @@ defineProps<{
   }[]
 }>()
 
-const emit = defineEmits<{
-  downloadResume: []
-}>()
-
-const downloadResume = () => {
-  emit('downloadResume')
+function downloadResume() {
+  const link = document.createElement('a')
+  link.href = '/resume.pdf'
+  link.download = 'Favour_Emeka_Frontend_Web_Developer_Resume.pdf'
+    
+  document.body.appendChild(link)
+  link.click()
+    
+  document.body.removeChild(link)
 }
 </script>
