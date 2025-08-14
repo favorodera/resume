@@ -1,57 +1,48 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindcss from '@tailwindcss/vite'
+
 export default defineNuxtConfig({
-  modules: ['@unocss/nuxt', '@nuxt/eslint', '@nuxt/content', '@nuxthq/studio', '@nuxtjs/color-mode'],
-
-  ssr: true,
-
-  components: [
-    {
-      path: '~/components/content-home',
-      global: true,
-      pathPrefix: true,
-      prefix: 'Home',
-    },
+  modules: [
+    '@nuxt/ui',
+    '@nuxt/eslint',
+    '@nuxtjs/seo',
+    '@nuxt/image',
+    '@nuxt/content',
   ],
-
-  devtools: { enabled: false },
-
+  devtools: { enabled: true },
   app: {
     rootTag: 'main',
     rootAttrs: {
       id: 'app',
     },
   },
-
-  css: ['~/assets/scss/index.scss'],
-
-  colorMode: {
-    preference: 'dark',
-    fallback: 'dark',
-    storage: 'localStorage',
-    classSuffix: '',
-    storageKey: 'color-mode',
-  },
-
+  css: ['~/assets/styles/index.css'],
   content: {
-    documentDriven: true,
-    markdown: {
-      mdc: true,
+    build: {
+      markdown: {
+        toc: {
+          depth: 4,
+          searchDepth: 4,
+        },
+      },
+    },
+    preview: {
+      dev: true,
+      api: 'https://api.nuxt.studio',
     },
   },
-
-  compatibilityDate: '2024-04-03',
-
+  experimental: {
+    viewTransition: true,
+  },
+  compatibilityDate: '2025-07-15',
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
+  },
   eslint: {
     config: {
       stylistic: true,
     },
-  },
-
-  studio: {
-    enabled: true,
-  },
-
-  unocss: {
-    nuxtLayers: true,
   },
 })

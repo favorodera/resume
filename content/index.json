@@ -1,0 +1,13 @@
+{
+  "name": "Favour Emeka",
+  "headline": "Frontend Web Developer specializing in Vue.js, Nuxt.js and Typescript.",
+  "location": "Owerri, Nigeria.",
+  "about": "Frontend Web Developer specializing in Vue.js, Nuxt.js, and TypeScript, with experience in building scalable, AI-integrated web applications. Focused on creating performant solutions with clean, maintainable code and exceptional user experiences.",
+  "avatar": "avatar.png",
+  "contact":[
+    {"label": "Email", "url": "mailto:favorodera@gmail.com", "icon": "lucide:mail"},
+    {"label": "GitHub", "url": "https://github.com/favorodera", "icon": "lucide:github"},
+    {"label": "LinkedIn", "url": "https://linkedin.com/in/favorodera", "icon": "lucide:linkedin"},
+    {"label": "X", "url": "https://x.com/favorodera", "icon": "hugeicons:new-twitter"}
+  ]
+}
