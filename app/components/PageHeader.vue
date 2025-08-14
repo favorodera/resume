@@ -100,21 +100,17 @@
 </template>
 
 <script setup lang="ts">
-interface Contact {
-  label: string
-  url: string
-  icon: string
-}
-
-interface Props {
+defineProps<{
   name: string
   headline: string
   location: string
   avatar: string
-  contacts: Contact[]
-}
-
-defineProps<Props>()
+  contacts: {
+    label: string
+    url: string
+    icon: string
+  }[]
+}>()
 
 const emit = defineEmits<{
   downloadResume: []

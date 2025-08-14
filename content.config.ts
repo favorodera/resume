@@ -1,9 +1,25 @@
 import { defineCollection, defineContentConfig, z } from '@nuxt/content'
 
 const contactSchema = z.object({
-  label: z.string().nonempty(),
-  url: z.string().nonempty(),
-  icon: z.string().nonempty(),
+  label: z.string(),
+  url: z.string(),
+  icon: z.string(),
+})
+
+const workExperienceSchema = z.object({
+  company: z.string(),
+  role: z.string(),
+  startDate: z.number(),
+  endDate: z.number(),
+  description: z.string(),
+  achievements: z.array(z.string()).optional(),
+})
+
+const educationSchema = z.object({
+  degree: z.string(),
+  institution: z.string(),
+  startDate: z.number(),
+  endDate: z.number(),
 })
 
 export default defineContentConfig({
@@ -18,6 +34,9 @@ export default defineContentConfig({
         avatar: z.string().nonempty(),
         about: z.string().nonempty(),
         contact: z.array(contactSchema),
+        workExperience: z.array(workExperienceSchema),
+        education: z.array(educationSchema),
+        skills: z.array(z.string()),
       }),
     }),
   },

@@ -9,5 +9,34 @@
     {"label": "GitHub", "url": "https://github.com/favorodera", "icon": "lucide:github"},
     {"label": "LinkedIn", "url": "https://linkedin.com/in/favorodera", "icon": "lucide:linkedin"},
     {"label": "X", "url": "https://x.com/favorodera", "icon": "hugeicons:new-twitter"}
+  ],
+  "workExperience":[
+    {
+      "role":"Frontend Web Developer",
+      "company": "Freelance",
+      "location": "Remote",
+      "startDate": "January 2024",
+      "endDate": "Present",
+      "description": "Delivered high-quality web applications using Vue.js, Nuxt.js, and Typescript, ensuring exceptional user experiences and scalability with 100% client satisfaction."
+    }
+  ],
+  "education":[
+    {
+      "degree": "Diploma, Frontend Engineering",
+      "institution": "AltSchool Africa",
+      "startDate": "Sep 2023",
+      "endDate": "Sep 2024"
+    }
+  ],
+  "skills":[
+    "Vue.Js",
+    "Nuxt.Js",
+    "TypeScript",
+    "TailwindCSS",
+    "Nuxt UI",
+    "Nuxt Content",
+    "Pinia",
+    "Vaxee",
+    "Supabase"
   ]
 }
