@@ -76,10 +76,10 @@ defineOgImageComponent('OGImage', {
 useSeoMeta({
   title: () => page.value?.name,
   ogTitle: () => page.value?.name,
-  description: () => page.value?.about,
-  ogDescription: () => page.value?.about,
+  description: () => page.value?.headline,
+  ogDescription: () => page.value?.headline,
   twitterTitle: () => page.value?.name,
-  twitterDescription: () => page.value?.about,
+  twitterDescription: () => page.value?.headline,
 })
 </script>
 
