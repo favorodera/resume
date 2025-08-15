@@ -13,13 +13,13 @@
     />
 
     <h1
-      class="mt-4 text-3xl font-extrabold tracking-tight leading-none text-center"
+      class="mt-4 text-3xl font-bold tracking-tight leading-none text-center"
     >
       {{ name }}
     </h1>
 
     <p
-      class="mt-2 text-lg text-center text-white/80 max-w-[600px] leading-snug"
+      class="text-xl text-center text-white/80 max-w-[600px] leading-snug"
     >
       {{ headline }}
     </p>
