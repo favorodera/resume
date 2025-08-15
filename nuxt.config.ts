@@ -17,15 +17,11 @@ export default defineNuxtConfig({
     },
   },
   css: ['~/assets/styles/index.css'],
+  site: {
+    url: 'https://resume-favorodera.vercel.app/',
+    name: 'Favour Emeka | Resume',
+  },
   content: {
-    build: {
-      markdown: {
-        toc: {
-          depth: 4,
-          searchDepth: 4,
-        },
-      },
-    },
     preview: {
       dev: true,
       api: 'https://api.nuxt.studio',
@@ -33,9 +29,6 @@ export default defineNuxtConfig({
   },
   routeRules: {
     '/': { prerender: true },
-  },
-  experimental: {
-    viewTransition: true,
   },
   compatibilityDate: '2025-07-15',
   vite: {

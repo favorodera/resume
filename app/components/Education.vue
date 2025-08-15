@@ -29,8 +29,8 @@
 defineProps<{
   institution: string
   degree: string
-  startDate: number
-  endDate: number
+  startDate: string
+  endDate: string
 }>()
  
 </script>

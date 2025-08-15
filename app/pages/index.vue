@@ -68,6 +68,12 @@ const { data: page } = await useAsyncData(
   () => queryCollection('index').first(),
 )
 
+defineOgImageComponent('OGImage', {
+  name: page.value?.name,
+  avatar: page.value?.avatar,
+  headline: page.value?.headline,
+})
+
 useSeoMeta({
   title: () => page.value?.name,
   ogTitle: () => page.value?.name,
