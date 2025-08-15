@@ -11,7 +11,7 @@
     <template #header>
       <NuxtLink
         :to="url"
-        class="flex gap-1 items-center hover:underline"
+        class="flex gap-1 items-center hover:underline w-fit"
         target="_blank"
       >
         {{ name }}

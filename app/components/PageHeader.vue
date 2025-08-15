@@ -18,7 +18,6 @@
       
       <h1
         id="name"
-        tabindex="-1"
         class="text-2xl font-bold"
       >
         {{ name }}
