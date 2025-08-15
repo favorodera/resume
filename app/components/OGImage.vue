@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full h-full flex flex-col items-center justify-center bg-gradient-to-b from-[#0d0d0d] to-[#1a1a1a] text-white p-6 sm:p-10"
+    class="w-full h-full flex flex-col items-center justify-center bg-[#090909] text-white p-6 sm:p-10"
   >
     <NuxtImg
       :src="avatar"
@@ -36,7 +36,7 @@ withDefaults(
   {
     name: 'John Doe',
     headline: 'Crafting digital experiences that inspire.',
-    avatar: '/avatar.png',
+    avatar: 'https://resume-favorodera.vercel.app/avatar.png',
   },
 )
 </script>

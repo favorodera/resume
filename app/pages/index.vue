@@ -70,7 +70,6 @@ const { data: page } = await useAsyncData(
 
 defineOgImageComponent('OGImage', {
   name: page.value?.name,
-  avatar: page.value?.avatar,
   headline: page.value?.headline,
 })
 

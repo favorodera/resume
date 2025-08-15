@@ -41,4 +41,11 @@ export default defineNuxtConfig({
       stylistic: true,
     },
   },
+  ogImage: {
+    googleFontMirror: true,
+    fonts: [
+      'Quantico:400',
+      'Quantico:700',
+    ],
+  },
 })
